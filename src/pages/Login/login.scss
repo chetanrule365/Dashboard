@@ -1,0 +1,60 @@
+@import "/src/styles/mixins";
+@import "/src/styles/colors";
+@import "/src/styles/animations";
+
+.login-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary;
+    padding: 32px;
+    @include flexBox(column, flex-start, flex-end);
+    .login-button {
+        padding: 14px;
+        width: 120px;
+        margin: 16px;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+    form {
+        background-color: white;
+        border-radius: 3px;
+        padding: 16px;
+        width: 300px;
+        animation: fade 1s;
+        .email,
+        .password {
+            @include flexBox(column, center, flex-start);
+            margin-bottom: 12px;
+            border-bottom: 2px solid $grey2;
+            label {
+                color: rgb(61, 61, 61);
+                font-size: 12px;
+            }
+            input {
+                font-size: 14px;
+                width: 240px;
+                padding: 4px 0;
+                &::placeholder {
+                    color: $grey2;
+                }
+            }
+        }
+        .forgot-pass-con {
+            @include flexBox(row, space-between);
+            .remind {
+                @include flexBox();
+            }
+        }
+        .login-butt {
+            width: 100%;
+            height: 36px;
+            font-family: "avenir-bold";
+            color: white;
+            background-color: $action;
+            margin-top: 48px;
+            padding: 8px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+}

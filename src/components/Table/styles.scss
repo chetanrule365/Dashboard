@@ -1,0 +1,70 @@
+@import "/src/styles/mixins";
+@import "/src/styles/colors";
+@import "/src/styles/animations";
+
+.custom-table {
+  min-width: 100%;
+  .table-header {
+    height: 60px;
+    color: $primary;
+    background: $grey1;
+    box-shadow: 1px 1px 8px rgb(211, 211, 211);
+    z-index: 10;
+  }
+  tr,
+  .table-header {
+    @include flexBox(row, flex-start);
+    padding: 8px 16px;
+    &:hover {
+      box-shadow: 2px 2px 8px $grey2;
+    }
+    th,
+    td {
+      font-size: 12px;
+      font-weight: 300;
+      text-align: start;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-right: 16px;
+    }
+    .name,
+    .author {
+      width: 150px;
+      text-transform: capitalize;
+    }
+    .gender {
+      width: 50px;
+      text-transform: capitalize;
+    }
+    .dob {
+      width: 80px;
+    }
+    .email {
+      width: 200px;
+    }
+    .condition,
+    .medications,
+    .phone {
+      width: 100px;
+      text-transform: capitalize;
+    }
+    .year_of_diagnosis,
+    .posted_on {
+      white-space: normal;
+      width: 80px;
+    }
+    .role {
+      width: 60px;
+      text-transform: capitalize;
+    }
+    .doctor,
+    .advocate {
+      width: 90px;
+      text-transform: capitalize;
+    }
+    .post {
+      width: 400px;
+    }
+  }
+}

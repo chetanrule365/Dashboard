@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4078a6;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_7017" data-name="Group 7017" transform="translate(-467 -3181)">
+    <path id="Menu" class="cls-1" d="M-6160,19V16.5h20V19Zm0-8.75V7.75h20v2.5Zm0-8.75V-1h20V1.5Z" transform="translate(6629.395 3184)"/>
+    <rect id="Rectangle_3639" data-name="Rectangle 3639" class="cls-2" width="24" height="24" transform="translate(467 3181)"/>
+  </g>
+</svg>
